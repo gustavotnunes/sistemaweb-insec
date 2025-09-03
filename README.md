@@ -2,8 +2,6 @@
 
 Site simples inspirado no Have I Been Pwned, com verificação **passiva** de segurança usando APIs públicas.
 
-> ⚠️ Foco Dev Jr.: código direto, sem complicações. Não executa ataques ativos (nada de DoS/DDoS ou injeções).
-
 ## O que checa
 - **TLS & MitM (indicadores):** nota TLS via **SSL Labs**, presença de **HSTS** via **Mozilla Observatory**.
 - **DoS/DDoS (indicadores passivos):** detecção de **CDN/WAF** e cabeçalhos de _rate limit_.
