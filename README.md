@@ -1,4 +1,4 @@
-# InSec — InsideSecurity (Protótipo)
+# InSec — InsideSecurity 
 
 Site simples inspirado no Have I Been Pwned, com verificação **passiva** de segurança usando APIs públicas.
 
