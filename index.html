@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InSec — InsideSecurity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">🛡️</div>
+        <div class="title">
+          <h1>InSec</h1>
+          <span>InsideSecurity</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-item">Sobre</a>
+        <a href="#" class="nav-item">Docs</a>
+        <a href="#" class="nav-item">Contato</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h2>Verifique a segurança do seu site</h2>
+      <p class="subtitle">No estilo Have I Been Pwned — só que focado em pequenos sites. Digite uma URL para checagens passivas de segurança.</p>
+      <form id="scanForm" class="scanner" onsubmit="return false;">
+        <input id="url" type="url" placeholder="https://exemplo.com" required />
+        <button id="scanBtn" type="submit">Verificar</button>
+      </form>
+      <p class="hint">Dica: use um domínio público. Checagens ativas invasivas não são realizadas neste protótipo.</p>
+
+      <section id="result" class="card hidden">
+        <div class="card-head">
+          <h3>Resultado</h3>
+          <span id="riskBadge" class="badge">—</span>
+        </div>
+        <div id="loading" class="loading hidden">Analisando…</div>
+        <div id="output" class="output"></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <small>© 2025 InSec — InsideSecurity</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
